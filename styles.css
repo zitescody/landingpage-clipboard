@@ -118,11 +118,11 @@ div#five, div#seven, div#eight, div#nine, div#ten {
     margin-top: 50px;
 }
 
-div#feature {
+div.feature {
     margin-bottom: 50px;
 }
 
-div#companies {
+div.companies {
     margin-bottom: 25px;
 }
 
@@ -134,17 +134,17 @@ footer {
     background: whitesmoke;
 }
 
-div#footer-socials {
+div.footer-socials {
     display: flex;
     justify-content: space-around;
 }
 /*content styles*/
-button#ios {
+button.ios {
     background-color: var(--strongCyan);
     box-shadow: 0px 5px 2px 2px hsla(171, 66%, 44%, 0.5);
 }
 
-button#mac {
+button.mac {
     background-color: var(--lightBlue);
     box-shadow: 0px 5px 2px 2px hsla(233, 100%, 69%, 0.5);
     margin-top: 5%;
@@ -188,15 +188,15 @@ a.content {
 }
 
 @media only screen and (min-width: 768px) {
-    button#mac {
+    button.mac {
         margin-top: 0%;
     }
 
-    div#feature, img.company-logo {
+    div.feature, img.company-logo {
         margin-bottom: 0%;
     }
 
-    div#companies {
+    div.companies {
         margin-bottom: 25px;
     }
     
