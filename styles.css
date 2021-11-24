@@ -1,0 +1,221 @@
+/*universal styles*/
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+    /*colors*/
+    --strongCyan: hsl(171, 66%, 44%);
+    --lightBlue: hsl(233, 100%, 69%);
+    --darkGrayishBlue: hsl(210, 10%, 33%);
+    --grayishBlue: hsl(201, 11%, 66%);
+    --white: white;
+
+    /*fonts*/
+    --baiJamjuree: 'Bai Jamjuree', sans-serif;
+    --baiJamjureeLight: 400;
+    --baiJamjureeMedium: 600;
+
+    --h1Color: var(--darkGrayishBlue);
+    --h1Weight: var(--baiJamjureeMedium);
+    --h1Size: 24pt;
+
+    --h2Color: var(--darkGrayishBlue);
+    --h2Weight: var(--baiJamjureeMedium);
+    --h2Size: 20pt;
+
+    --h3Color: var(--darkGrayishBlue);
+    --h3Weight: var(--baiJamjureeMedium);
+    --h3Size: 18pt;
+
+    --pColor: var(--grayishBlue);
+    --pWeight: var(--baiJamjureeLight);
+    --pSize: 14pt;
+
+    --buttonWeight: 400;
+    --buttonSize: 16pt;
+    --buttonColor: var(--white);
+    --buttonBorder: 1px solid transparent;
+    --buttonBorderRadius: 30px;
+    --buttonPadding: 15px 25px 15px;
+}
+
+h1 {
+    font-size: var(--h1Size);
+    font-weight: var(--h1Weight);
+    color: var(--h1Color);
+    text-align: center;
+}
+
+h2 {
+    font-size: var(--h2Size);
+    font-weight: var(--h2Weight);
+    color: var(--h2Color);
+    text-align: center;
+}
+
+h3 {
+    font-size: var(--h3Size);
+    font-weight: var(--h3Weight);
+    color: var(--h3Color);
+    text-align: center;
+}
+
+p {
+    font-size: var(--pSize);
+    font-weight: var(--pWeight);
+    color: var(--pColor);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--pColor);
+}
+
+a:hover {
+    color: var(--strongCyan);
+}
+
+button.btn {
+    font-size: var(--buttonSize);
+    font-weight: var(--buttonWeight);
+    color: var(--white);
+    padding: var(--buttonPadding);
+    border: var(--buttonBorder);
+    border-radius: var(--buttonBorderRadius);
+    width: 100%;
+}
+
+button.btn:hover {
+    opacity: 0.9;
+    color: var(--white);
+}
+
+/*layout styles*/
+body {
+    margin: 0;
+    background: url("./images/bg-header-mobile.png");
+    background-color: var(--white);
+    background-repeat: no-repeat;
+}
+
+main {
+    margin: 15% 10% 5%;
+}
+
+div#two {
+    margin-top: 5%;
+}
+
+div#three {
+    margin-top: 50px;
+}
+
+div#four, div#six, div#eleven {
+    margin-top: 150px;
+}
+    
+div#five, div#seven, div#eight, div#nine, div#ten {
+    margin-top: 50px;
+}
+
+div#feature {
+    margin-bottom: 50px;
+}
+
+div#companies {
+    margin-bottom: 25px;
+}
+
+div.subsection {
+    margin-top: 50px;
+}
+
+footer {
+    background: whitesmoke;
+}
+
+div#footer-socials {
+    display: flex;
+    justify-content: space-around;
+}
+/*content styles*/
+button#ios {
+    background-color: var(--strongCyan);
+    box-shadow: 0px 5px 2px 2px hsla(171, 66%, 44%, 0.5);
+}
+
+button#mac {
+    background-color: var(--lightBlue);
+    box-shadow: 0px 5px 2px 2px hsla(233, 100%, 69%, 0.5);
+    margin-top: 5%;
+}
+
+img.logo {
+    height: 110px;
+    width: 120px;
+}
+
+img.logo-small {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 70px;
+    width: 80px; 
+}
+
+img.computer, img.mobile {
+    width: 100%;
+}
+
+img.icon, img.company-logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+
+a.content {
+    display: flex;
+    justify-content: center;
+}
+
+/*media queries*/
+@media only screen and (min-width: 376px) {
+    body {
+        background: url("./images/bg-header-desktop.png");
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    button#mac {
+        margin-top: 0%;
+    }
+
+    div#feature, img.company-logo {
+        margin-bottom: 0%;
+    }
+
+    div#companies {
+        margin-bottom: 25px;
+    }
+    
+    div.subsection {
+        margin-top: 0%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    div#five {
+        align-items: center;
+    }
+
+    img.logo {
+        height: 220px;
+        width: 240px;
+    }
+}
+
+/*attribution styles*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
